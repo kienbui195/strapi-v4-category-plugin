@@ -157,7 +157,7 @@ const EditView = ({ history, location, match }) => {
             ...sanitizeEntity(item),
             id: createId,
             parent,
-            locale
+            locale,
           };
         });
 
@@ -233,7 +233,7 @@ const EditView = ({ history, location, match }) => {
       );
       const sanitizedMenuItemsData = get(sanitizedBody, "items", []).map(
         (item) => {
-          const sanitizedItem = sanitizeEntity(item);
+          const sanitizedItem = sanitizeEntity({ ...item, locale });
           const prevItem = get(data, "items", []).find(
             (_item) => _item.id === sanitizedItem.id
           );
