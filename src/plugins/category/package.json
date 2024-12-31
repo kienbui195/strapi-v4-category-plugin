@@ -1,0 +1,43 @@
+{
+  "name": "strapi-plugin-menus",
+  "version": "1.4.1",
+  "description": "A plugin for Strapi CMS to customize the structure of menus and menu items.",
+  "license": "MIT",
+  "strapi": {
+    "displayName": "Categories",
+    "name": "category",
+    "description": "Customize the structure of Categories and Category items.",
+    "kind": "plugin"
+  },
+  "author": {
+    "name": "Matt Milburn",
+    "url": "https://github.com/mattmilburn"
+  },
+  "maintainers": [
+    {
+      "name": "Matt Milburn",
+      "url": "https://github.com/mattmilburn"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmilburn/strapi-plugin-menus.git"
+  },
+  "keywords": [
+    "strapi",
+    "plugin",
+    "link",
+    "list",
+    "mega",
+    "menu",
+    "navigation",
+    "nested",
+    "page"
+  ],
+  "dependencies": {
+    "react-flip-move": "^3.0.5"
+  }
+}
